@@ -8,10 +8,10 @@ export const Card: React.FC = () => {
         <Image style={styles.image} source={newsImage} />
       </View>
       <View style={styles.titleWrapper}>
-        <Text>Dummy title</Text>
+        <Text style={styles.title}>Dummy titlea</Text>
       </View>
       <View style={styles.descriptionWrapper}>
-        <Text>This is a dummy description</Text>
+        <Text style={styles.description}>This is a dummy description</Text>
       </View>
     </View>
   );
@@ -46,5 +46,15 @@ const styles = StyleSheet.create({
   },
   descriptionWrapper: {
     paddingHorizontal: 15,
+  },
+  title: {
+    fontFamily: "Ubuntu-Bold",
+    fontSize: 20,
+    marginTop: 10,
+  },
+  description: {
+    fontFamily: "Ubuntu-Regular",
+    fontSize: 15,
+    marginTop: 10,
   },
 });
